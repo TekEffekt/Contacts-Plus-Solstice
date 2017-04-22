@@ -15,7 +15,7 @@ class NetworkConfiguration {
         return ["X-Auth-Token": NetworkAuth.shared.token ?? ""]
     }
     
-    static var shared: NetworkConfiguration = NetworkConfiguration(urlString: "https://www.bradleycorp.com/sitesurveytool")
+    static var shared: NetworkConfiguration = NetworkConfiguration(urlString: "https://s3.amazonaws.com/technical-challenge")
     
     init(urlString: String) {
         baseUrl = NSURL(string: urlString) ?? NSURL()

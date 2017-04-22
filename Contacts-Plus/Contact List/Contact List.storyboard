@@ -6,25 +6,68 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Contact List Table View Controller-->
         <scene sceneID="Qvx-DG-8ZF">
             <objects>
-                <tableViewController id="JGK-lG-lLi" sceneMemberID="viewController">
+                <tableViewController id="JGK-lG-lLi" customClass="ContactListTableViewController" customModule="Contacts_Plus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M8m-is-iBt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wNI-cE-Xi2">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Contact" rowHeight="55" id="wNI-cE-Xi2" customClass="ContactListCell" customModule="Contacts_Plus" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wNI-cE-Xi2" id="RaQ-3d-Hz7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="iw5-wx-CmY">
+                                            <rect key="frame" x="8" y="4" width="46" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="iw5-wx-CmY" secondAttribute="height" multiplier="1:1" id="ib1-VW-9QY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kyle Zawacki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhv-kJ-knw">
+                                            <rect key="frame" x="66" y="4" width="301" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="JjA-LX-bjK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(262) 412-6478" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-Hc-IAe">
+                                            <rect key="frame" x="66" y="30" width="301" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="iw5-wx-CmY" secondAttribute="leading" id="0KX-mc-4Iw"/>
+                                        <constraint firstItem="iw5-wx-CmY" firstAttribute="top" secondItem="RaQ-3d-Hz7" secondAttribute="topMargin" constant="-4" id="BUh-z5-Av1"/>
+                                        <constraint firstItem="h5P-Hc-IAe" firstAttribute="leading" secondItem="iw5-wx-CmY" secondAttribute="trailing" constant="12.5" id="WNj-gT-fFj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iw5-wx-CmY" secondAttribute="bottom" constant="-3" id="bHV-UN-Y2y"/>
+                                        <constraint firstItem="h5P-Hc-IAe" firstAttribute="trailing" secondItem="RaQ-3d-Hz7" secondAttribute="trailingMargin" id="dpo-NO-5H5"/>
+                                        <constraint firstItem="h5P-Hc-IAe" firstAttribute="top" secondItem="rhv-kJ-knw" secondAttribute="bottom" constant="5" id="fV6-wJ-EtW"/>
+                                        <constraint firstAttribute="trailing" secondItem="rhv-kJ-knw" secondAttribute="trailing" constant="8" id="iYA-ef-P9a"/>
+                                        <constraint firstItem="rhv-kJ-knw" firstAttribute="leading" secondItem="iw5-wx-CmY" secondAttribute="trailing" constant="12.5" id="oFk-3o-hdm"/>
+                                        <constraint firstItem="iw5-wx-CmY" firstAttribute="centerY" secondItem="RaQ-3d-Hz7" secondAttribute="centerY" id="r5z-lG-dRN"/>
+                                        <constraint firstItem="rhv-kJ-knw" firstAttribute="top" secondItem="iw5-wx-CmY" secondAttribute="top" id="yDf-No-FjF"/>
+                                        <constraint firstItem="h5P-Hc-IAe" firstAttribute="bottom" secondItem="iw5-wx-CmY" secondAttribute="bottom" id="yId-TQ-C1a"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImage" destination="iw5-wx-CmY" id="raA-Kq-VtL"/>
+                                    <outlet property="nameLabel" destination="rhv-kJ-knw" id="dId-2G-9lf"/>
+                                    <outlet property="phoneNumberLabel" destination="h5P-Hc-IAe" id="ODJ-Xt-tlV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -57,4 +100,7 @@
             <point key="canvasLocation" x="-92" y="176"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Blank Avatar" width="640" height="640"/>
+    </resources>
 </document>

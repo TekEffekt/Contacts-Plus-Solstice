@@ -9,5 +9,7 @@
 import Foundation
 
 struct Phone {
-    
+    var work: String?
+    var home: String?
+    var mobile: String?
 }

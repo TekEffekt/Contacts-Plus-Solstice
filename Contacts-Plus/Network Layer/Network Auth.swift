@@ -11,7 +11,7 @@ import Foundation
 class NetworkAuth {
     
     private let key = "NetworkAuthToken"
-    static var shared: NetworkAuth!
+    static var shared = NetworkAuth()
     let defaults = UserDefaults.standard
     
     func setToken(_ token: String) {

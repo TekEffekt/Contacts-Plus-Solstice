@@ -11,6 +11,12 @@ import UIKit
 
 class ContactListDatasource: NSObject, UITableViewDataSource {
     
+    var contacts: [Contact]
+    
+    init(contacts: [Contact] = []) {
+        self.contacts = contacts
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 0
     }

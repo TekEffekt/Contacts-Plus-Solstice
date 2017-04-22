@@ -10,6 +10,11 @@ import UIKit
 
 class ContactListTableViewController: UITableViewController {
 
-    
+    override func viewDidLoad() {
+        let op = ContactOperation()
+        op.execute { (contacts, result) in
+            
+        }
+    }
 
 }
