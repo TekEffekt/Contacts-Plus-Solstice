@@ -29,6 +29,15 @@
 		B6D3C3251EABE7680017E78D /* Network Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3101EABE7680017E78D /* Network Reachability.swift */; };
 		B6D3C3261EABE7680017E78D /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3151EABE7680017E78D /* LoadingIndicator.swift */; };
 		B6D3C3271EABE7680017E78D /* Network Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3161EABE7680017E78D /* Network Alert.swift */; };
+		B6D3C32B1EABE79E0017E78D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3281EABE79E0017E78D /* Contact.swift */; };
+		B6D3C32C1EABE79E0017E78D /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3291EABE79E0017E78D /* Phone.swift */; };
+		B6D3C32D1EABE79E0017E78D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C32A1EABE79E0017E78D /* Address.swift */; };
+		B6D3C3321EABE7AC0017E78D /* Contact Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D3C32F1EABE7AC0017E78D /* Contact Detail.storyboard */; };
+		B6D3C3331EABE7AC0017E78D /* Contact List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D3C3311EABE7AC0017E78D /* Contact List.storyboard */; };
+		B6D3C3351EABE8620017E78D /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3341EABE8620017E78D /* ContactListTableViewController.swift */; };
+		B6D3C3371EABE86E0017E78D /* ContactDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3361EABE86E0017E78D /* ContactDetailTableViewController.swift */; };
+		B6D3C3391EABE8A60017E78D /* ContactListDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3381EABE8A60017E78D /* ContactListDatasource.swift */; };
+		B6D3C33B1EABE8E10017E78D /* ContactDetailDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C33A1EABE8E10017E78D /* ContactDetailDatasource.swift */; };
 		CC4A07EA5E0E3B0C8774CEBD /* Pods_Contacts_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20254A9C6996ED208E51F657 /* Pods_Contacts_Plus.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +82,15 @@
 		B6D3C3101EABE7680017E78D /* Network Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Network Reachability.swift"; sourceTree = "<group>"; };
 		B6D3C3151EABE7680017E78D /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		B6D3C3161EABE7680017E78D /* Network Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Network Alert.swift"; sourceTree = "<group>"; };
+		B6D3C3281EABE79E0017E78D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B6D3C3291EABE79E0017E78D /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		B6D3C32A1EABE79E0017E78D /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		B6D3C32F1EABE7AC0017E78D /* Contact Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Contact Detail.storyboard"; sourceTree = "<group>"; };
+		B6D3C3311EABE7AC0017E78D /* Contact List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Contact List.storyboard"; sourceTree = "<group>"; };
+		B6D3C3341EABE8620017E78D /* ContactListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		B6D3C3361EABE86E0017E78D /* ContactDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailTableViewController.swift; sourceTree = "<group>"; };
+		B6D3C3381EABE8A60017E78D /* ContactListDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListDatasource.swift; sourceTree = "<group>"; };
+		B6D3C33A1EABE8E10017E78D /* ContactDetailDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailDatasource.swift; sourceTree = "<group>"; };
 		F714011434A201D52FEA444E /* Pods_Contacts_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +150,11 @@
 				B6D3C2E71EABE67C0017E78D /* Assets.xcassets */,
 				B6D3C2E91EABE67C0017E78D /* LaunchScreen.storyboard */,
 				B6D3C2EC1EABE67C0017E78D /* Info.plist */,
+				B6D3C3281EABE79E0017E78D /* Contact.swift */,
+				B6D3C3291EABE79E0017E78D /* Phone.swift */,
+				B6D3C32A1EABE79E0017E78D /* Address.swift */,
+				B6D3C3301EABE7AC0017E78D /* Contact List */,
+				B6D3C32E1EABE7AC0017E78D /* Contact Detail */,
 				B6D3C3001EABE7680017E78D /* Network Layer */,
 			);
 			path = "Contacts-Plus";
@@ -208,6 +231,26 @@
 				B6D3C3161EABE7680017E78D /* Network Alert.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		B6D3C32E1EABE7AC0017E78D /* Contact Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3C32F1EABE7AC0017E78D /* Contact Detail.storyboard */,
+				B6D3C3361EABE86E0017E78D /* ContactDetailTableViewController.swift */,
+				B6D3C33A1EABE8E10017E78D /* ContactDetailDatasource.swift */,
+			);
+			path = "Contact Detail";
+			sourceTree = "<group>";
+		};
+		B6D3C3301EABE7AC0017E78D /* Contact List */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3C3311EABE7AC0017E78D /* Contact List.storyboard */,
+				B6D3C3341EABE8620017E78D /* ContactListTableViewController.swift */,
+				B6D3C3381EABE8A60017E78D /* ContactListDatasource.swift */,
+			);
+			path = "Contact List";
 			sourceTree = "<group>";
 		};
 		FCCB51E6CE32A562294B8182 /* Pods */ = {
@@ -312,7 +355,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D3C3321EABE7AC0017E78D /* Contact Detail.storyboard in Resources */,
 				B6D3C2EB1EABE67C0017E78D /* LaunchScreen.storyboard in Resources */,
+				B6D3C3331EABE7AC0017E78D /* Contact List.storyboard in Resources */,
 				B6D3C2E81EABE67C0017E78D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,11 +469,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D3C32C1EABE79E0017E78D /* Phone.swift in Sources */,
 				B6D3C3251EABE7680017E78D /* Network Reachability.swift in Sources */,
+				B6D3C32B1EABE79E0017E78D /* Contact.swift in Sources */,
 				B6D3C3231EABE7680017E78D /* Network Configuration.swift in Sources */,
 				B6D3C3241EABE7680017E78D /* Network Dispatcher.swift in Sources */,
 				B6D3C3221EABE7680017E78D /* Network Auth.swift in Sources */,
+				B6D3C32D1EABE79E0017E78D /* Address.swift in Sources */,
 				B6D3C3191EABE7680017E78D /* HttpMethod.swift in Sources */,
+				B6D3C3351EABE8620017E78D /* ContactListTableViewController.swift in Sources */,
+				B6D3C33B1EABE8E10017E78D /* ContactDetailDatasource.swift in Sources */,
 				B6D3C3261EABE7680017E78D /* LoadingIndicator.swift in Sources */,
 				B6D3C2E11EABE67C0017E78D /* AppDelegate.swift in Sources */,
 				B6D3C31A1EABE7680017E78D /* NetworkErrors.swift in Sources */,
@@ -437,7 +487,9 @@
 				B6D3C3211EABE7680017E78D /* Response.swift in Sources */,
 				B6D3C3171EABE7680017E78D /* DataType.swift in Sources */,
 				B6D3C31D1EABE7680017E78D /* Parser.swift in Sources */,
+				B6D3C3391EABE8A60017E78D /* ContactListDatasource.swift in Sources */,
 				B6D3C31B1EABE7680017E78D /* NetworkOperation.swift in Sources */,
+				B6D3C3371EABE86E0017E78D /* ContactDetailTableViewController.swift in Sources */,
 				B6D3C31E1EABE7680017E78D /* Request+Headers.swift in Sources */,
 				B6D3C31F1EABE7680017E78D /* Request.swift in Sources */,
 				B6D3C3181EABE7680017E78D /* Dispatcher.swift in Sources */,
