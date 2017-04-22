@@ -1,0 +1,6 @@
+framework module Pods_Contacts_Plus {
+  umbrella header "Pods-Contacts-Plus-umbrella.h"
+
+  export *
+  module * { export * }
+}
