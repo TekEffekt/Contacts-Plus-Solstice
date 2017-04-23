@@ -23,4 +23,7 @@ class ContactDetailTableViewController: UITableViewController, DatasourceDelegat
         navigationItem.title = contact.name
     }
     
+    @IBAction func favoriteTapped(_ sender: FavoriteButton) {
+        sender.toggle()
+    }
 }

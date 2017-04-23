@@ -506,7 +506,11 @@
                     <navigationItem key="navigationItem" title="Title" id="HOw-Ea-P46">
                         <rightBarButtonItems>
                             <barButtonItem title="Edit" id="Dzg-Oc-dNT"/>
-                            <barButtonItem title="Fav" id="gds-js-ehF"/>
+                            <barButtonItem image="Empty Star" id="gds-js-ehF" customClass="FavoriteButton" customModule="Contacts_Plus" customModuleProvider="target">
+                                <connections>
+                                    <action selector="favoriteTapped:" destination="SNa-gG-1nd" id="CA1-eI-ufk"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
@@ -518,6 +522,7 @@
     <resources>
         <image name="Blank Avatar" width="640" height="640"/>
         <image name="Email" width="40" height="28"/>
+        <image name="Empty Star" width="22" height="21"/>
         <image name="Globe" width="40" height="40"/>
         <image name="Map" width="40" height="40"/>
         <image name="Phone Call" width="40" height="40"/>

@@ -54,6 +54,7 @@
 		B6D3C3661EAC54150017E78D /* WorkPhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */; };
 		B6D3C3681EAC54290017E78D /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3671EAC54290017E78D /* EmailCell.swift */; };
 		B6D3C36A1EAC54350017E78D /* WebsiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3691EAC54350017E78D /* WebsiteCell.swift */; };
+		B6D3C36C1EAD29810017E78D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C36B1EAD29810017E78D /* FavoriteButton.swift */; };
 		CC4A07EA5E0E3B0C8774CEBD /* Pods_Contacts_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20254A9C6996ED208E51F657 /* Pods_Contacts_Plus.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkPhoneCell.swift; sourceTree = "<group>"; };
 		B6D3C3671EAC54290017E78D /* EmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
 		B6D3C3691EAC54350017E78D /* WebsiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteCell.swift; sourceTree = "<group>"; };
+		B6D3C36B1EAD29810017E78D /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		F714011434A201D52FEA444E /* Pods_Contacts_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -277,6 +279,7 @@
 				B6D3C32F1EABE7AC0017E78D /* Contact Detail.storyboard */,
 				B6D3C3361EABE86E0017E78D /* ContactDetailTableViewController.swift */,
 				B6D3C33A1EABE8E10017E78D /* ContactDetailDatasource.swift */,
+				B6D3C36B1EAD29810017E78D /* FavoriteButton.swift */,
 				B6D3C35A1EAC54140017E78D /* Cells */,
 			);
 			path = "Contact Detail";
@@ -572,6 +575,7 @@
 				B6D3C31E1EABE7680017E78D /* Request+Headers.swift in Sources */,
 				B6D3C31F1EABE7680017E78D /* Request.swift in Sources */,
 				B6D3C3471EABFEE10017E78D /* AddressParser.swift in Sources */,
+				B6D3C36C1EAD29810017E78D /* FavoriteButton.swift in Sources */,
 				B6D3C3181EABE7680017E78D /* Dispatcher.swift in Sources */,
 				B6D3C31C1EABE7680017E78D /* NetworkResult.swift in Sources */,
 			);
