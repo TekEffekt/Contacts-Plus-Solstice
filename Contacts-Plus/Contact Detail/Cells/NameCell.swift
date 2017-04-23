@@ -15,6 +15,9 @@ class NameCell: ConfigurableCell {
 
     override func configure(withContact contact: Contact) {
         nameLabel.text = contact.name
+        if let imageUrl = URL(string: contact.largeImageUrl) {
+            avatarImage.setImage(url: imageUrl)
+        }
     }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Imaginary
 
 class ContactCell: ConfigurableCell {
 
@@ -17,6 +18,9 @@ class ContactCell: ConfigurableCell {
     override func configure(withContact contact: Contact) {
         nameLabel.text = contact.name
         phoneNumberLabel.text = contact.phone.home
+        if let imageUrl = URL(string: contact.smallImageUrl) {
+            avatarImage.setImage(url: imageUrl)
+        }
     }
     
 }

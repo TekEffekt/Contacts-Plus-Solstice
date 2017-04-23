@@ -1,18 +1,27 @@
 PODS:
+  - Cache (2.2.2):
+    - CryptoSwift
+  - CryptoSwift (0.6.8)
+  - Imaginary (1.0.2):
+    - Cache (~> 2.0)
   - MBProgressHUD (1.0.0)
   - ReachabilitySwift (3)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Imaginary
   - MBProgressHUD
   - ReachabilitySwift
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Cache: b00196618af3facf17986fadda228cc77b5a5a10
+  CryptoSwift: f21ea03ed3a94e79d241648ce26652cd4810508a
+  Imaginary: b4f4c069ad23b53243058a040a531e099aee8a1f
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 2eccd94e2accb1126b28fa1c666c2c3e3ca1b8ef
+PODFILE CHECKSUM: 7c0f77d300609510cdbfd45eebb937f73c50393a
 
 COCOAPODS: 1.1.1

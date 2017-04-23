@@ -9,6 +9,7 @@ target 'Contacts-Plus' do
     pod 'MBProgressHUD'
     pod 'ReachabilitySwift'
     pod 'SwiftyJSON'
+    pod 'Imaginary'
   target 'Contacts-PlusTests' do
     inherit! :search_paths
     # Pods for testing
