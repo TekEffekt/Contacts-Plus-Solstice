@@ -13,10 +13,12 @@ class ContactListTableViewController: UITableViewController, DatasourceDelegate 
     var datasource: ContactListDatasource!
     var chosenContact: Contact?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         datasource = ContactListDatasource(delegate: self)
         tableView.dataSource = datasource
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 60
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
