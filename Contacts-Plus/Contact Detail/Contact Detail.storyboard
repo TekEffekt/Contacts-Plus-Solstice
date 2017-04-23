@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SNa-gG-1nd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="awy-9C-NvA">
+            <objects>
+                <tableViewController id="SNa-gG-1nd" customClass="ContactDetailTableViewController" customModule="Contacts_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ulp-VE-wJt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Name Cell" rowHeight="60" id="zzU-Lo-2lZ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zzU-Lo-2lZ" id="2Q9-jd-oWR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-vN-uEC">
+                                            <rect key="frame" x="10" y="4" width="51.5" height="51.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="aUJ-vN-uEC" secondAttribute="height" multiplier="1:1" id="l01-0z-DaA"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kyle Zawacki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IF-fG-iww">
+                                            <rect key="frame" x="75" y="8" width="300" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="aUJ-vN-uEC" secondAttribute="leading" constant="-2" id="6UL-qr-bwC"/>
+                                        <constraint firstItem="aUJ-vN-uEC" firstAttribute="top" secondItem="2Q9-jd-oWR" secondAttribute="top" constant="4" id="nF4-TJ-yAL"/>
+                                        <constraint firstAttribute="bottom" secondItem="aUJ-vN-uEC" secondAttribute="bottom" constant="4" id="puq-hr-idt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SNa-gG-1nd" id="uED-Ey-Uu2"/>
+                            <outlet property="delegate" destination="SNa-gG-1nd" id="naA-tW-Ho4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="HOw-Ea-P46"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6p-Fm-vSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.19999999999999" y="178.56071964017991"/>
+        </scene>
+    </scenes>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactListCell: UITableViewCell {
+class ContactCell: UITableViewCell {
 
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ContactListTableViewController: UITableViewController {
+class ContactListTableViewController: UITableViewController, DatasourceDelegate {
 
+    var datasource: ContactListDatasource!
+    
     override func viewDidLoad() {
-        let op = ContactOperation()
-        op.execute { (contacts, result) in
-            
-        }
+        datasource = ContactListDatasource(delegate: self)
+        tableView.dataSource = datasource
     }
 
 }

@@ -22,7 +22,7 @@ class ContactOperation: NetworkOperation {
                 switch response {
                 case .json(let data):
                     if let contacts = self.contactParser.parse(data: data) {
-                        print(contacts)
+                        completionHandler(contacts, .success)
                     }
                 case .error(let statusCode, let error):
                     print("Error: \(error) Status Code: \(statusCode) ")
