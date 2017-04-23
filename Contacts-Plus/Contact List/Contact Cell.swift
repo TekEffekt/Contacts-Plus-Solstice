@@ -19,7 +19,8 @@ class ContactCell: ConfigurableCell {
         nameLabel.text = contact.name
         phoneNumberLabel.text = contact.phone.home
         if let imageUrl = URL(string: contact.smallImageUrl) {
-            avatarImage.setImage(url: imageUrl)
+            let placeholder = UIImage(named: "Blank Avatar")
+            avatarImage.setImage(url: imageUrl, placeholder: placeholder)
         }
     }
     

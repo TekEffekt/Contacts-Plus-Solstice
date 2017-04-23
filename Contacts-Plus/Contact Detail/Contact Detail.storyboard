@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -502,7 +503,12 @@
                             <outlet property="delegate" destination="SNa-gG-1nd" id="naA-tW-Ho4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="HOw-Ea-P46"/>
+                    <navigationItem key="navigationItem" title="Title" id="HOw-Ea-P46">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Edit" id="Dzg-Oc-dNT"/>
+                            <barButtonItem title="Fav" id="gds-js-ehF"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6p-Fm-vSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
