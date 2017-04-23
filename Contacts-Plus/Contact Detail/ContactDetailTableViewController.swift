@@ -15,8 +15,12 @@ class ContactDetailTableViewController: UITableViewController, DatasourceDelegat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 60
         datasource = ContactDetailDatasource(contact: contact, delegate: self)
         tableView.dataSource = datasource
+        tableView.reloadData()
+        navigationItem.title = contact.name
     }
     
 }

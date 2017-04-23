@@ -20,15 +20,15 @@ class ContactDetailDatasource: NSObject, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return getSectionNumber()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return getRowNumber()
+        return getRowNumber(for: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let id = getCellId(forRow: indexPath.row)
+        let id = getCellId(forIndex: indexPath)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: id) as? ConfigurableCell else {
             return UITableViewCell()
         }
@@ -37,16 +37,28 @@ class ContactDetailDatasource: NSObject, UITableViewDataSource {
         return cell
     }
     
-    private func getRowNumber() -> Int {
+    private func getSectionNumber() -> Int {
         var base = 5
-        base += contact.phone.home != nil ? 1 : 0
-        base += contact.phone.work != nil ? 1 : 0
-        base += contact.phone.mobile != nil ? 1 : 0
+        if contact.phone.home != nil || contact.phone.mobile != nil || contact.phone.work != nil {
+            base += 1
+        }
         return base
     }
     
-    private func getCellId(forRow row: Int) -> String {
-        switch row {
+    private func getRowNumber(for section: Int) -> Int {
+        if section < 5 {
+            return 1
+        } else {
+            var numberOfPhones = 0
+            numberOfPhones += contact.phone.mobile != nil ? 1 : 0
+            numberOfPhones += contact.phone.work != nil ? 1 : 0
+            numberOfPhones += contact.phone.home != nil ? 1 : 0
+            return numberOfPhones
+        }
+    }
+    
+    private func getCellId(forIndex indexPath: IndexPath) -> String {
+        switch indexPath.section {
         case 0:
             return "Name Cell"
         case 1:
@@ -58,11 +70,13 @@ class ContactDetailDatasource: NSObject, UITableViewDataSource {
         case 4:
             return "Website Cell"
         case 5:
-            return "Mobile Phone Cell"
-        case 6:
-            return "Home Phone Cell"
-        case 7:
-            return "Work Phone Cell"
+            if indexPath.row == 0 {
+                return "Mobile Phone Cell"
+            } else if indexPath.row == 1 {
+                return "Home Phone Cell"
+            } else {
+                return "Work Phone Cell"
+            }
         default:
             return ""
         }
