@@ -505,7 +505,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="HOw-Ea-P46">
                         <rightBarButtonItems>
-                            <barButtonItem title="Edit" id="Dzg-Oc-dNT"/>
+                            <barButtonItem title="Edit" id="Dzg-Oc-dNT">
+                                <connections>
+                                    <segue destination="rXM-3u-4NU" kind="show" identifier="Show Edit Contact" id="kAG-Lk-om3"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="Empty Star" id="gds-js-ehF" customClass="FavoriteButton" customModule="Contacts_Plus" customModuleProvider="target">
                                 <connections>
                                     <action selector="favoriteTapped:" destination="SNa-gG-1nd" id="CA1-eI-ufk"/>
@@ -517,6 +521,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6p-Fm-vSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-199.19999999999999" y="178.56071964017991"/>
+        </scene>
+        <!--Edit Contact-->
+        <scene sceneID="b6n-Lu-L4l">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Edit Contact" referencedIdentifier="Edit Contact" id="rXM-3u-4NU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQA-ka-1in" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="178"/>
         </scene>
     </scenes>
     <resources>

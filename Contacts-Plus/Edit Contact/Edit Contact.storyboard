@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OhC-3q-dbO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Contact-->
+        <scene sceneID="gHY-TT-hVh">
+            <objects>
+                <tableViewController storyboardIdentifier="Edit Contact" id="OhC-3q-dbO" customClass="EditContactTableViewController" customModule="Contacts_Plus" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vl7-18-5H6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="sMR-3d-npB" customClass="EditContactCell" customModule="Contacts_Plus" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sMR-3d-npB" id="K3P-nS-WSh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-xy-A4k">
+                                            <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="OhC-3q-dbO" id="XHl-NH-Zaw"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="F4E-xy-A4k" secondAttribute="trailing" id="b8B-oh-AFr"/>
+                                        <constraint firstItem="F4E-xy-A4k" firstAttribute="top" secondItem="K3P-nS-WSh" secondAttribute="top" id="kb4-Qe-g28"/>
+                                        <constraint firstItem="F4E-xy-A4k" firstAttribute="leading" secondItem="K3P-nS-WSh" secondAttribute="leading" constant="12" id="pUz-xi-vag"/>
+                                        <constraint firstAttribute="bottom" secondItem="F4E-xy-A4k" secondAttribute="bottom" id="yfL-C4-9nI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textField" destination="F4E-xy-A4k" id="mfJ-Lc-lg5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OhC-3q-dbO" id="fJS-xh-vZH"/>
+                            <outlet property="delegate" destination="OhC-3q-dbO" id="mpI-s6-erS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit Contact" id="ec2-JC-GsD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7s5-zZ-hMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.39999999999998" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>

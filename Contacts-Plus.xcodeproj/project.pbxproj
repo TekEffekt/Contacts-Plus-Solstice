@@ -55,6 +55,11 @@
 		B6D3C3681EAC54290017E78D /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3671EAC54290017E78D /* EmailCell.swift */; };
 		B6D3C36A1EAC54350017E78D /* WebsiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3691EAC54350017E78D /* WebsiteCell.swift */; };
 		B6D3C36C1EAD29810017E78D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C36B1EAD29810017E78D /* FavoriteButton.swift */; };
+		B6D3C36F1EAD3CF10017E78D /* EditContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C36E1EAD3CF10017E78D /* EditContactTableViewController.swift */; };
+		B6D3C3711EAD3D000017E78D /* Edit Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D3C3701EAD3D000017E78D /* Edit Contact.storyboard */; };
+		B6D3C3731EAD47310017E78D /* EditContactDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3721EAD47310017E78D /* EditContactDatasource.swift */; };
+		B6D3C3751EAD4AAC0017E78D /* EditContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3741EAD4AAC0017E78D /* EditContactCell.swift */; };
+		B6D3C3771EAD56C80017E78D /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */; };
 		CC4A07EA5E0E3B0C8774CEBD /* Pods_Contacts_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20254A9C6996ED208E51F657 /* Pods_Contacts_Plus.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +130,11 @@
 		B6D3C3671EAC54290017E78D /* EmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
 		B6D3C3691EAC54350017E78D /* WebsiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteCell.swift; sourceTree = "<group>"; };
 		B6D3C36B1EAD29810017E78D /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		B6D3C36E1EAD3CF10017E78D /* EditContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactTableViewController.swift; sourceTree = "<group>"; };
+		B6D3C3701EAD3D000017E78D /* Edit Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Edit Contact.storyboard"; sourceTree = "<group>"; };
+		B6D3C3721EAD47310017E78D /* EditContactDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactDatasource.swift; sourceTree = "<group>"; };
+		B6D3C3741EAD4AAC0017E78D /* EditContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactCell.swift; sourceTree = "<group>"; };
+		B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		F714011434A201D52FEA444E /* Pods_Contacts_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,6 +200,7 @@
 				B6D3C3491EAC15390017E78D /* Core */,
 				B6D3C3301EABE7AC0017E78D /* Contact List */,
 				B6D3C32E1EABE7AC0017E78D /* Contact Detail */,
+				B6D3C36D1EAD3CE10017E78D /* Edit Contact */,
 				B6D3C3001EABE7680017E78D /* Network Layer */,
 			);
 			path = "Contacts-Plus";
@@ -299,6 +310,7 @@
 		B6D3C3491EAC15390017E78D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */,
 				B6D3C34A1EAC15450017E78D /* DatasourceDelegate.swift */,
 				B6D3C34C1EAC43DC0017E78D /* ConfigurableCell.swift */,
 			);
@@ -318,6 +330,17 @@
 				B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B6D3C36D1EAD3CE10017E78D /* Edit Contact */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3C36E1EAD3CF10017E78D /* EditContactTableViewController.swift */,
+				B6D3C3701EAD3D000017E78D /* Edit Contact.storyboard */,
+				B6D3C3721EAD47310017E78D /* EditContactDatasource.swift */,
+				B6D3C3741EAD4AAC0017E78D /* EditContactCell.swift */,
+			);
+			path = "Edit Contact";
 			sourceTree = "<group>";
 		};
 		FCCB51E6CE32A562294B8182 /* Pods */ = {
@@ -426,6 +449,7 @@
 				B6D3C2EB1EABE67C0017E78D /* LaunchScreen.storyboard in Resources */,
 				B6D3C3331EABE7AC0017E78D /* Contact List.storyboard in Resources */,
 				B6D3C2E81EABE67C0017E78D /* Assets.xcassets in Resources */,
+				B6D3C3711EAD3D000017E78D /* Edit Contact.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +568,7 @@
 				B6D3C3241EABE7680017E78D /* Network Dispatcher.swift in Sources */,
 				B6D3C3221EABE7680017E78D /* Network Auth.swift in Sources */,
 				B6D3C32D1EABE79E0017E78D /* Address.swift in Sources */,
+				B6D3C3751EAD4AAC0017E78D /* EditContactCell.swift in Sources */,
 				B6D3C3191EABE7680017E78D /* HttpMethod.swift in Sources */,
 				B6D3C3661EAC54150017E78D /* WorkPhoneCell.swift in Sources */,
 				B6D3C3351EABE8620017E78D /* ContactListTableViewController.swift in Sources */,
@@ -561,12 +586,14 @@
 				B6D3C33F1EABF0820017E78D /* ContactRequest.swift in Sources */,
 				B6D3C3201EABE7680017E78D /* RequestParameters.swift in Sources */,
 				B6D3C3211EABE7680017E78D /* Response.swift in Sources */,
+				B6D3C3731EAD47310017E78D /* EditContactDatasource.swift in Sources */,
 				B6D3C33D1EABEE8A0017E78D /* Contact Cell.swift in Sources */,
 				B6D3C3611EAC54150017E78D /* AddressCell.swift in Sources */,
 				B6D3C3171EABE7680017E78D /* DataType.swift in Sources */,
 				B6D3C34D1EAC43DC0017E78D /* ConfigurableCell.swift in Sources */,
 				B6D3C31D1EABE7680017E78D /* Parser.swift in Sources */,
 				B6D3C3391EABE8A60017E78D /* ContactListDatasource.swift in Sources */,
+				B6D3C3771EAD56C80017E78D /* FormTableViewController.swift in Sources */,
 				B6D3C31B1EABE7680017E78D /* NetworkOperation.swift in Sources */,
 				B6D3C3641EAC54150017E78D /* MobilePhoneCell.swift in Sources */,
 				B6D3C3371EABE86E0017E78D /* ContactDetailTableViewController.swift in Sources */,
@@ -577,6 +604,7 @@
 				B6D3C3471EABFEE10017E78D /* AddressParser.swift in Sources */,
 				B6D3C36C1EAD29810017E78D /* FavoriteButton.swift in Sources */,
 				B6D3C3181EABE7680017E78D /* Dispatcher.swift in Sources */,
+				B6D3C36F1EAD3CF10017E78D /* EditContactTableViewController.swift in Sources */,
 				B6D3C31C1EABE7680017E78D /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

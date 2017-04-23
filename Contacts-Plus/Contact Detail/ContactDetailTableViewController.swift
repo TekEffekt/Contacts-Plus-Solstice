@@ -26,4 +26,11 @@ class ContactDetailTableViewController: UITableViewController, DatasourceDelegat
     @IBAction func favoriteTapped(_ sender: FavoriteButton) {
         sender.toggle()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let editContatVc = segue.destination as? EditContactTableViewController {
+            editContatVc.contact = contact
+        }
+    }
+    
 }
