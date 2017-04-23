@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ContactCell: UITableViewCell {
+class ContactCell: ConfigurableCell {
 
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneNumberLabel: UILabel!
+    
+    override func configure(withContact contact: Contact) {
+        nameLabel.text = contact.name
+        phoneNumberLabel.text = contact.phone.home
+    }
     
 }

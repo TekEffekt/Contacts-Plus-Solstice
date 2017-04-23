@@ -45,6 +45,15 @@
 		B6D3C3451EABFB810017E78D /* PhoneParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3441EABFB810017E78D /* PhoneParser.swift */; };
 		B6D3C3471EABFEE10017E78D /* AddressParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3461EABFEE10017E78D /* AddressParser.swift */; };
 		B6D3C34B1EAC15450017E78D /* DatasourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C34A1EAC15450017E78D /* DatasourceDelegate.swift */; };
+		B6D3C34D1EAC43DC0017E78D /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C34C1EAC43DC0017E78D /* ConfigurableCell.swift */; };
+		B6D3C3611EAC54150017E78D /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C35B1EAC54150017E78D /* AddressCell.swift */; };
+		B6D3C3621EAC54150017E78D /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C35C1EAC54150017E78D /* CompanyCell.swift */; };
+		B6D3C3631EAC54150017E78D /* HomePhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C35D1EAC54150017E78D /* HomePhoneCell.swift */; };
+		B6D3C3641EAC54150017E78D /* MobilePhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C35E1EAC54150017E78D /* MobilePhoneCell.swift */; };
+		B6D3C3651EAC54150017E78D /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C35F1EAC54150017E78D /* NameCell.swift */; };
+		B6D3C3661EAC54150017E78D /* WorkPhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */; };
+		B6D3C3681EAC54290017E78D /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3671EAC54290017E78D /* EmailCell.swift */; };
+		B6D3C36A1EAC54350017E78D /* WebsiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3691EAC54350017E78D /* WebsiteCell.swift */; };
 		CC4A07EA5E0E3B0C8774CEBD /* Pods_Contacts_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20254A9C6996ED208E51F657 /* Pods_Contacts_Plus.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +114,15 @@
 		B6D3C3441EABFB810017E78D /* PhoneParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneParser.swift; sourceTree = "<group>"; };
 		B6D3C3461EABFEE10017E78D /* AddressParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressParser.swift; sourceTree = "<group>"; };
 		B6D3C34A1EAC15450017E78D /* DatasourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasourceDelegate.swift; sourceTree = "<group>"; };
+		B6D3C34C1EAC43DC0017E78D /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		B6D3C35B1EAC54150017E78D /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		B6D3C35C1EAC54150017E78D /* CompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		B6D3C35D1EAC54150017E78D /* HomePhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePhoneCell.swift; sourceTree = "<group>"; };
+		B6D3C35E1EAC54150017E78D /* MobilePhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePhoneCell.swift; sourceTree = "<group>"; };
+		B6D3C35F1EAC54150017E78D /* NameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkPhoneCell.swift; sourceTree = "<group>"; };
+		B6D3C3671EAC54290017E78D /* EmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		B6D3C3691EAC54350017E78D /* WebsiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteCell.swift; sourceTree = "<group>"; };
 		F714011434A201D52FEA444E /* Pods_Contacts_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -259,6 +277,7 @@
 				B6D3C32F1EABE7AC0017E78D /* Contact Detail.storyboard */,
 				B6D3C3361EABE86E0017E78D /* ContactDetailTableViewController.swift */,
 				B6D3C33A1EABE8E10017E78D /* ContactDetailDatasource.swift */,
+				B6D3C35A1EAC54140017E78D /* Cells */,
 			);
 			path = "Contact Detail";
 			sourceTree = "<group>";
@@ -278,8 +297,24 @@
 			isa = PBXGroup;
 			children = (
 				B6D3C34A1EAC15450017E78D /* DatasourceDelegate.swift */,
+				B6D3C34C1EAC43DC0017E78D /* ConfigurableCell.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		B6D3C35A1EAC54140017E78D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3C35F1EAC54150017E78D /* NameCell.swift */,
+				B6D3C35C1EAC54150017E78D /* CompanyCell.swift */,
+				B6D3C35B1EAC54150017E78D /* AddressCell.swift */,
+				B6D3C3671EAC54290017E78D /* EmailCell.swift */,
+				B6D3C3691EAC54350017E78D /* WebsiteCell.swift */,
+				B6D3C35D1EAC54150017E78D /* HomePhoneCell.swift */,
+				B6D3C35E1EAC54150017E78D /* MobilePhoneCell.swift */,
+				B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FCCB51E6CE32A562294B8182 /* Pods */ = {
@@ -501,27 +536,36 @@
 				B6D3C32C1EABE79E0017E78D /* Phone.swift in Sources */,
 				B6D3C3251EABE7680017E78D /* Network Reachability.swift in Sources */,
 				B6D3C32B1EABE79E0017E78D /* Contact.swift in Sources */,
+				B6D3C3621EAC54150017E78D /* CompanyCell.swift in Sources */,
 				B6D3C3231EABE7680017E78D /* Network Configuration.swift in Sources */,
 				B6D3C3241EABE7680017E78D /* Network Dispatcher.swift in Sources */,
 				B6D3C3221EABE7680017E78D /* Network Auth.swift in Sources */,
 				B6D3C32D1EABE79E0017E78D /* Address.swift in Sources */,
 				B6D3C3191EABE7680017E78D /* HttpMethod.swift in Sources */,
+				B6D3C3661EAC54150017E78D /* WorkPhoneCell.swift in Sources */,
 				B6D3C3351EABE8620017E78D /* ContactListTableViewController.swift in Sources */,
 				B6D3C33B1EABE8E10017E78D /* ContactDetailDatasource.swift in Sources */,
+				B6D3C3651EAC54150017E78D /* NameCell.swift in Sources */,
 				B6D3C3431EABF6A10017E78D /* ContactOperation.swift in Sources */,
 				B6D3C3261EABE7680017E78D /* LoadingIndicator.swift in Sources */,
+				B6D3C36A1EAC54350017E78D /* WebsiteCell.swift in Sources */,
 				B6D3C2E11EABE67C0017E78D /* AppDelegate.swift in Sources */,
+				B6D3C3631EAC54150017E78D /* HomePhoneCell.swift in Sources */,
 				B6D3C31A1EABE7680017E78D /* NetworkErrors.swift in Sources */,
+				B6D3C3681EAC54290017E78D /* EmailCell.swift in Sources */,
 				B6D3C3271EABE7680017E78D /* Network Alert.swift in Sources */,
 				B6D3C3451EABFB810017E78D /* PhoneParser.swift in Sources */,
 				B6D3C33F1EABF0820017E78D /* ContactRequest.swift in Sources */,
 				B6D3C3201EABE7680017E78D /* RequestParameters.swift in Sources */,
 				B6D3C3211EABE7680017E78D /* Response.swift in Sources */,
 				B6D3C33D1EABEE8A0017E78D /* Contact Cell.swift in Sources */,
+				B6D3C3611EAC54150017E78D /* AddressCell.swift in Sources */,
 				B6D3C3171EABE7680017E78D /* DataType.swift in Sources */,
+				B6D3C34D1EAC43DC0017E78D /* ConfigurableCell.swift in Sources */,
 				B6D3C31D1EABE7680017E78D /* Parser.swift in Sources */,
 				B6D3C3391EABE8A60017E78D /* ContactListDatasource.swift in Sources */,
 				B6D3C31B1EABE7680017E78D /* NetworkOperation.swift in Sources */,
+				B6D3C3641EAC54150017E78D /* MobilePhoneCell.swift in Sources */,
 				B6D3C3371EABE86E0017E78D /* ContactDetailTableViewController.swift in Sources */,
 				B6D3C34B1EAC15450017E78D /* DatasourceDelegate.swift in Sources */,
 				B6D3C3411EABF28A0017E78D /* ContactParser.swift in Sources */,

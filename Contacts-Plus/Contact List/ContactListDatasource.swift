@@ -45,7 +45,7 @@ class ContactListDatasource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Contact Cell") as? ContactCell else { return UITableViewCell() }
         let contact = contacts[indexPath.row]
-        cell.nameLabel.text = contact.name
+        cell.configure(withContact: contact)
         return cell
     }
     

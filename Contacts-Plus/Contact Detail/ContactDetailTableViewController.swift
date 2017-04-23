@@ -8,8 +8,15 @@
 
 import UIKit
 
-class ContactDetailTableViewController: UITableViewController {
+class ContactDetailTableViewController: UITableViewController, DatasourceDelegate {
 
+    var contact: Contact!
+    var datasource: ContactDetailDatasource!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        datasource = ContactDetailDatasource(contact: contact, delegate: self)
+        tableView.dataSource = datasource
+    }
     
 }

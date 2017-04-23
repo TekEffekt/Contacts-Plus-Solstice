@@ -13,6 +13,7 @@ class ContactListTableViewController: UITableViewController, DatasourceDelegate 
     var datasource: ContactListDatasource!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         datasource = ContactListDatasource(delegate: self)
         tableView.dataSource = datasource
     }
