@@ -12,4 +12,8 @@ class EmailCell: ConfigurableCell {
 
     @IBOutlet weak var emailLabel: UILabel!
 
+    override func configure(withContact contact: Contact) {
+        emailLabel.text = contact.email
+    }
+    
 }

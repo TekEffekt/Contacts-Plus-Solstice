@@ -14,4 +14,10 @@ class AddressCell: ConfigurableCell {
     @IBOutlet weak var cityStateLabel: UILabel!
     @IBOutlet weak var zipCountryLabel: UILabel!
 
+    override func configure(withContact contact: Contact) {
+        streetLabel.text = contact.address.street
+        cityStateLabel.text = "\(contact.address.city) \(contact.address.state)"
+        zipCountryLabel.text = "\(contact.address.zip) \(contact.address.country)"
+    }
+    
 }

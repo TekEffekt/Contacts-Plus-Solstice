@@ -76,10 +76,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="axZ-lz-ONI"/>
+                    <connections>
+                        <segue destination="oyS-Xy-IQu" kind="show" identifier="Show Contact Detail" id="ujJ-hc-WND"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccq-D1-QKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="175.86206896551727"/>
+        </scene>
+        <!--Contact Detail-->
+        <scene sceneID="31X-VZ-Y38">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contact Detail" referencedIdentifier="Contact Detail" id="oyS-Xy-IQu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkP-f9-pWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426" y="175"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7bm-jh-aFE">

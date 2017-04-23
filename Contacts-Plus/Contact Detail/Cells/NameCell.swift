@@ -13,5 +13,8 @@ class NameCell: ConfigurableCell {
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
-
+    override func configure(withContact contact: Contact) {
+        nameLabel.text = contact.name
+    }
+    
 }

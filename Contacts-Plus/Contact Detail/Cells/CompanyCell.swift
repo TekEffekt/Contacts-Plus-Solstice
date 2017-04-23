@@ -12,4 +12,7 @@ class CompanyCell: ConfigurableCell {
 
     @IBOutlet weak var companyLabel: UILabel!
 
+    override func configure(withContact contact: Contact) {
+        companyLabel.text = contact.company
+    }
 }

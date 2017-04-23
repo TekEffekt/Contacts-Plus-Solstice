@@ -12,4 +12,8 @@ class WebsiteCell: ConfigurableCell {
 
     @IBOutlet weak var websiteLabel: UILabel!
 
+    override func configure(withContact contact: Contact) {
+        websiteLabel.text = contact.website
+    }
+    
 }
