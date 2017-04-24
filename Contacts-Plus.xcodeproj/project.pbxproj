@@ -11,7 +11,6 @@
 		B6D3C2E11EABE67C0017E78D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C2E01EABE67C0017E78D /* AppDelegate.swift */; };
 		B6D3C2E81EABE67C0017E78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D3C2E71EABE67C0017E78D /* Assets.xcassets */; };
 		B6D3C2EB1EABE67C0017E78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D3C2E91EABE67C0017E78D /* LaunchScreen.storyboard */; };
-		B6D3C2F61EABE67D0017E78D /* Contacts_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C2F51EABE67D0017E78D /* Contacts_PlusTests.swift */; };
 		B6D3C3171EABE7680017E78D /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3021EABE7680017E78D /* DataType.swift */; };
 		B6D3C3181EABE7680017E78D /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3031EABE7680017E78D /* Dispatcher.swift */; };
 		B6D3C3191EABE7680017E78D /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3041EABE7680017E78D /* HttpMethod.swift */; };
@@ -61,6 +60,9 @@
 		B6D3C3771EAD56C80017E78D /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */; };
 		B6D3C3791EAD58380017E78D /* EditContactTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3781EAD58380017E78D /* EditContactTextField.swift */; };
 		B6D3C37B1EAD94950017E78D /* PhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C37A1EAD94950017E78D /* PhoneCell.swift */; };
+		B6D3C37F1EAD99FD0017E78D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C37D1EAD99FD0017E78D /* MockData.swift */; };
+		B6D3C3861EAD9A860017E78D /* ContactsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3811EAD9A860017E78D /* ContactsTest.swift */; };
+		B6D3C3891EAD9A860017E78D /* Contact.json in Resources */ = {isa = PBXBuildFile; fileRef = B6D3C3851EAD9A860017E78D /* Contact.json */; };
 		CC4A07EA5E0E3B0C8774CEBD /* Pods_Contacts_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20254A9C6996ED208E51F657 /* Pods_Contacts_Plus.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +88,6 @@
 		B6D3C2EA1EABE67C0017E78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6D3C2EC1EABE67C0017E78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D3C2F11EABE67D0017E78D /* Contacts-PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contacts-PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6D3C2F51EABE67D0017E78D /* Contacts_PlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_PlusTests.swift; sourceTree = "<group>"; };
 		B6D3C2F71EABE67D0017E78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D3C3021EABE7680017E78D /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		B6D3C3031EABE7680017E78D /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
@@ -137,6 +138,9 @@
 		B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		B6D3C3781EAD58380017E78D /* EditContactTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactTextField.swift; sourceTree = "<group>"; };
 		B6D3C37A1EAD94950017E78D /* PhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCell.swift; sourceTree = "<group>"; };
+		B6D3C37D1EAD99FD0017E78D /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B6D3C3811EAD9A860017E78D /* ContactsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTest.swift; sourceTree = "<group>"; };
+		B6D3C3851EAD9A860017E78D /* Contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contact.json; sourceTree = "<group>"; };
 		F714011434A201D52FEA444E /* Pods_Contacts_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -211,7 +215,8 @@
 		B6D3C2F41EABE67D0017E78D /* Contacts-PlusTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6D3C2F51EABE67D0017E78D /* Contacts_PlusTests.swift */,
+				B6D3C3801EAD9A860017E78D /* Network Layer Tests */,
+				B6D3C37D1EAD99FD0017E78D /* MockData.swift */,
 				B6D3C2F71EABE67D0017E78D /* Info.plist */,
 			);
 			path = "Contacts-PlusTests";
@@ -346,6 +351,23 @@
 			path = "Edit Contact";
 			sourceTree = "<group>";
 		};
+		B6D3C3801EAD9A860017E78D /* Network Layer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3C3811EAD9A860017E78D /* ContactsTest.swift */,
+				B6D3C3821EAD9A860017E78D /* Mock JSON */,
+			);
+			path = "Network Layer Tests";
+			sourceTree = "<group>";
+		};
+		B6D3C3821EAD9A860017E78D /* Mock JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3C3851EAD9A860017E78D /* Contact.json */,
+			);
+			path = "Mock JSON";
+			sourceTree = "<group>";
+		};
 		FCCB51E6CE32A562294B8182 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D3C3891EAD9A860017E78D /* Contact.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +640,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D3C2F61EABE67D0017E78D /* Contacts_PlusTests.swift in Sources */,
+				B6D3C37F1EAD99FD0017E78D /* MockData.swift in Sources */,
+				B6D3C3861EAD9A860017E78D /* ContactsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
