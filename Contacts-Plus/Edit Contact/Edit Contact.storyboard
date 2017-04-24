@@ -13,46 +13,356 @@
         <scene sceneID="gHY-TT-hVh">
             <objects>
                 <tableViewController storyboardIdentifier="Edit Contact" id="OhC-3q-dbO" customClass="EditContactTableViewController" customModule="Contacts_Plus" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vl7-18-5H6">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vl7-18-5H6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="sMR-3d-npB" customClass="EditContactCell" customModule="Contacts_Plus" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sMR-3d-npB" id="K3P-nS-WSh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-xy-A4k">
-                                            <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <connections>
-                                                <outlet property="delegate" destination="OhC-3q-dbO" id="XHl-NH-Zaw"/>
-                                            </connections>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="F4E-xy-A4k" secondAttribute="trailing" id="b8B-oh-AFr"/>
-                                        <constraint firstItem="F4E-xy-A4k" firstAttribute="top" secondItem="K3P-nS-WSh" secondAttribute="top" id="kb4-Qe-g28"/>
-                                        <constraint firstItem="F4E-xy-A4k" firstAttribute="leading" secondItem="K3P-nS-WSh" secondAttribute="leading" constant="12" id="pUz-xi-vag"/>
-                                        <constraint firstAttribute="bottom" secondItem="F4E-xy-A4k" secondAttribute="bottom" id="yfL-C4-9nI"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="textField" destination="F4E-xy-A4k" id="mfJ-Lc-lg5"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="dOd-6x-BPX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="sMR-3d-npB">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sMR-3d-npB" id="K3P-nS-WSh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-xy-A4k" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="Odp-L8-Tbp"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="F4E-xy-A4k" secondAttribute="trailing" id="b8B-oh-AFr"/>
+                                                <constraint firstItem="F4E-xy-A4k" firstAttribute="top" secondItem="K3P-nS-WSh" secondAttribute="top" id="kb4-Qe-g28"/>
+                                                <constraint firstItem="F4E-xy-A4k" firstAttribute="leading" secondItem="K3P-nS-WSh" secondAttribute="leading" constant="12" id="pUz-xi-vag"/>
+                                                <constraint firstAttribute="bottom" secondItem="F4E-xy-A4k" secondAttribute="bottom" id="yfL-C4-9nI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="Y7P-Ze-EdK">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y7P-Ze-EdK" id="UbF-W9-j8S">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZA2-2P-jKH" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="ZX5-tG-6gh"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZA2-2P-jKH" firstAttribute="top" secondItem="UbF-W9-j8S" secondAttribute="top" id="4x8-ks-gRF"/>
+                                                <constraint firstItem="ZA2-2P-jKH" firstAttribute="leading" secondItem="UbF-W9-j8S" secondAttribute="leading" constant="12" id="GlG-Lt-2Bh"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZA2-2P-jKH" secondAttribute="bottom" id="LSq-Cu-Lux"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZA2-2P-jKH" secondAttribute="trailing" id="OUN-2W-cVY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="QAt-LC-1V8">
+                                        <rect key="frame" x="0.0" y="123" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QAt-LC-1V8" id="MAt-Fw-yac">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k36-4N-Toc" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="A71-8a-OlU"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="k36-4N-Toc" secondAttribute="bottom" id="4xL-2u-8mp"/>
+                                                <constraint firstItem="k36-4N-Toc" firstAttribute="top" secondItem="MAt-Fw-yac" secondAttribute="top" id="GAO-Dn-JJw"/>
+                                                <constraint firstAttribute="trailing" secondItem="k36-4N-Toc" secondAttribute="trailing" id="QrA-Pn-Rd1"/>
+                                                <constraint firstItem="k36-4N-Toc" firstAttribute="leading" secondItem="MAt-Fw-yac" secondAttribute="leading" constant="12" id="VUt-3X-m2C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Address" id="Fed-mj-WNj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="c5o-bi-7E2">
+                                        <rect key="frame" x="0.0" y="223" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c5o-bi-7E2" id="Xdr-8l-kQF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="guL-9r-gwp" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="mpy-kl-mHz"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="guL-9r-gwp" firstAttribute="top" secondItem="Xdr-8l-kQF" secondAttribute="top" id="J4K-2f-eX2"/>
+                                                <constraint firstAttribute="bottom" secondItem="guL-9r-gwp" secondAttribute="bottom" id="Lyn-h0-imU"/>
+                                                <constraint firstAttribute="trailing" secondItem="guL-9r-gwp" secondAttribute="trailing" id="T8f-dX-Fu5"/>
+                                                <constraint firstItem="guL-9r-gwp" firstAttribute="leading" secondItem="Xdr-8l-kQF" secondAttribute="leading" constant="12" id="gVh-ET-Q76"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="Gyc-p8-C7k">
+                                        <rect key="frame" x="0.0" y="267" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gyc-p8-C7k" id="eim-jR-25K">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjb-mU-Wmo" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="1Le-Qe-heo"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tjb-mU-Wmo" firstAttribute="leading" secondItem="eim-jR-25K" secondAttribute="leading" constant="12" id="4X5-Au-0tJ"/>
+                                                <constraint firstItem="tjb-mU-Wmo" firstAttribute="top" secondItem="eim-jR-25K" secondAttribute="top" id="9Vx-QU-tNb"/>
+                                                <constraint firstAttribute="trailing" secondItem="tjb-mU-Wmo" secondAttribute="trailing" id="MsT-nE-rTe"/>
+                                                <constraint firstAttribute="bottom" secondItem="tjb-mU-Wmo" secondAttribute="bottom" id="sQC-7G-g9i"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="805-m2-98F">
+                                        <rect key="frame" x="0.0" y="311" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="805-m2-98F" id="Nof-Cm-LUF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-pt-KI8" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="o84-dw-Ku2"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tlr-pt-KI8" firstAttribute="leading" secondItem="Nof-Cm-LUF" secondAttribute="leading" constant="12" id="bb3-VC-H6G"/>
+                                                <constraint firstAttribute="trailing" secondItem="tlr-pt-KI8" secondAttribute="trailing" id="diS-0U-m45"/>
+                                                <constraint firstItem="tlr-pt-KI8" firstAttribute="top" secondItem="Nof-Cm-LUF" secondAttribute="top" id="t8W-5M-2ok"/>
+                                                <constraint firstAttribute="bottom" secondItem="tlr-pt-KI8" secondAttribute="bottom" id="w4D-H0-jK0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="7Qd-04-1kb">
+                                        <rect key="frame" x="0.0" y="355" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Qd-04-1kb" id="mQG-IL-EZy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFQ-EV-Bh5" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="JRf-IS-xca"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IFQ-EV-Bh5" firstAttribute="leading" secondItem="mQG-IL-EZy" secondAttribute="leading" constant="12" id="1yJ-sc-xy0"/>
+                                                <constraint firstAttribute="bottom" secondItem="IFQ-EV-Bh5" secondAttribute="bottom" id="EPo-Qh-T1o"/>
+                                                <constraint firstAttribute="trailing" secondItem="IFQ-EV-Bh5" secondAttribute="trailing" id="sy2-Ua-45F"/>
+                                                <constraint firstItem="IFQ-EV-Bh5" firstAttribute="top" secondItem="mQG-IL-EZy" secondAttribute="top" id="yQR-u3-HPg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="gxm-8e-MlA">
+                                        <rect key="frame" x="0.0" y="399" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gxm-8e-MlA" id="phy-uL-FfP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rbb-SN-3gP" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="wvl-dX-HdI"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rbb-SN-3gP" firstAttribute="top" secondItem="phy-uL-FfP" secondAttribute="top" id="68R-j5-9kO"/>
+                                                <constraint firstItem="Rbb-SN-3gP" firstAttribute="leading" secondItem="phy-uL-FfP" secondAttribute="leading" constant="12" id="X8O-JM-Hxm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rbb-SN-3gP" secondAttribute="trailing" id="xn5-vP-SLR"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rbb-SN-3gP" secondAttribute="bottom" id="z7F-Bt-qVw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Website" id="QZ0-tn-IUx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="yWz-LG-55F">
+                                        <rect key="frame" x="0.0" y="499" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yWz-LG-55F" id="HIk-y8-txf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSG-Bh-Rw8" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="K9U-T4-cDj"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eSG-Bh-Rw8" secondAttribute="bottom" id="4mn-sI-v1n"/>
+                                                <constraint firstItem="eSG-Bh-Rw8" firstAttribute="leading" secondItem="HIk-y8-txf" secondAttribute="leading" constant="12" id="9IK-6p-kuu"/>
+                                                <constraint firstItem="eSG-Bh-Rw8" firstAttribute="top" secondItem="HIk-y8-txf" secondAttribute="top" id="eYa-zb-psC"/>
+                                                <constraint firstAttribute="trailing" secondItem="eSG-Bh-Rw8" secondAttribute="trailing" id="mj6-Xc-fQq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Mobile Phone" id="fdH-bN-NWm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="vQi-CK-Wle">
+                                        <rect key="frame" x="0.0" y="599" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vQi-CK-Wle" id="ctj-HX-LjC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="huW-dW-IHf" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="8i2-wM-ExV"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="huW-dW-IHf" secondAttribute="bottom" id="XTV-z5-YfF"/>
+                                                <constraint firstItem="huW-dW-IHf" firstAttribute="leading" secondItem="ctj-HX-LjC" secondAttribute="leading" constant="12" id="cNy-qR-y4h"/>
+                                                <constraint firstAttribute="trailing" secondItem="huW-dW-IHf" secondAttribute="trailing" id="uAp-LL-oKw"/>
+                                                <constraint firstItem="huW-dW-IHf" firstAttribute="top" secondItem="ctj-HX-LjC" secondAttribute="top" id="zu6-O0-fHn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Home Phone" id="pud-lA-oLB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="Sv4-oL-L8k">
+                                        <rect key="frame" x="0.0" y="699" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sv4-oL-L8k" id="xBE-4X-3oE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dJ-Om-hGf" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="bCz-g0-Njz"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3dJ-Om-hGf" firstAttribute="top" secondItem="xBE-4X-3oE" secondAttribute="top" id="63f-7w-BFe"/>
+                                                <constraint firstAttribute="trailing" secondItem="3dJ-Om-hGf" secondAttribute="trailing" id="RhN-T6-28B"/>
+                                                <constraint firstItem="3dJ-Om-hGf" firstAttribute="leading" secondItem="xBE-4X-3oE" secondAttribute="leading" constant="12" id="Xic-pl-ZU8"/>
+                                                <constraint firstAttribute="bottom" secondItem="3dJ-Om-hGf" secondAttribute="bottom" id="iWl-Qi-sXv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Work Phone" id="3gH-75-mgw">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Edit Cell" id="KNm-8O-tyG">
+                                        <rect key="frame" x="0.0" y="799" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNm-8O-tyG" id="MSB-4W-Cex">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Work Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDL-tF-krR" customClass="EditContactTextField" customModule="Contacts_Plus" customModuleProvider="target">
+                                                    <rect key="frame" x="12" y="0.0" width="363" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="OhC-3q-dbO" id="Kbx-r4-gAY"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SDL-tF-krR" firstAttribute="leading" secondItem="MSB-4W-Cex" secondAttribute="leading" constant="12" id="8bf-4l-shQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="SDL-tF-krR" secondAttribute="bottom" id="UVN-y9-GZC"/>
+                                                <constraint firstAttribute="trailing" secondItem="SDL-tF-krR" secondAttribute="trailing" id="pQ7-Cu-7dq"/>
+                                                <constraint firstItem="SDL-tF-krR" firstAttribute="top" secondItem="MSB-4W-Cex" secondAttribute="top" id="wA3-vU-qpW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="OhC-3q-dbO" id="fJS-xh-vZH"/>
                             <outlet property="delegate" destination="OhC-3q-dbO" id="mpI-s6-erS"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit Contact" id="ec2-JC-GsD"/>
+                    <connections>
+                        <outletCollection property="editTextFields" destination="F4E-xy-A4k" collectionClass="NSMutableArray" id="gOY-e0-l6s"/>
+                        <outletCollection property="editTextFields" destination="ZA2-2P-jKH" collectionClass="NSMutableArray" id="jcL-jr-fg8"/>
+                        <outletCollection property="editTextFields" destination="k36-4N-Toc" collectionClass="NSMutableArray" id="LO6-Nl-BDN"/>
+                        <outletCollection property="editTextFields" destination="guL-9r-gwp" collectionClass="NSMutableArray" id="95v-2P-ThS"/>
+                        <outletCollection property="editTextFields" destination="tjb-mU-Wmo" collectionClass="NSMutableArray" id="D7s-sA-dfg"/>
+                        <outletCollection property="editTextFields" destination="tlr-pt-KI8" collectionClass="NSMutableArray" id="tvw-VM-AIf"/>
+                        <outletCollection property="editTextFields" destination="IFQ-EV-Bh5" collectionClass="NSMutableArray" id="w0A-kk-1ow"/>
+                        <outletCollection property="editTextFields" destination="Rbb-SN-3gP" collectionClass="NSMutableArray" id="d5Y-fx-lm6"/>
+                        <outletCollection property="editTextFields" destination="eSG-Bh-Rw8" collectionClass="NSMutableArray" id="Ldf-HO-Bp3"/>
+                        <outletCollection property="editTextFields" destination="huW-dW-IHf" collectionClass="NSMutableArray" id="Bqy-vE-PKi"/>
+                        <outletCollection property="editTextFields" destination="3dJ-Om-hGf" collectionClass="NSMutableArray" id="d6H-MM-o17"/>
+                        <outletCollection property="editTextFields" destination="SDL-tF-krR" collectionClass="NSMutableArray" id="EkE-iP-cVb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7s5-zZ-hMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

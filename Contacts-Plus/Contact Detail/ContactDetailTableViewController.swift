@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactDetailTableViewController: UITableViewController, DatasourceDelegate {
+class ContactDetailTableViewController: UITableViewController, DatasourceDelegate, EditContactDelegate {
 
     var contact: Contact!
     var datasource: ContactDetailDatasource!
@@ -28,9 +28,15 @@ class ContactDetailTableViewController: UITableViewController, DatasourceDelegat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let editContatVc = segue.destination as? EditContactTableViewController {
-            editContatVc.contact = contact
+        if let editContactVc = segue.destination as? EditContactTableViewController {
+            editContactVc.contact = contact
+            editContactVc.delegate = self
         }
+    }
+    
+    func update(with contact: Contact) {
+        self.contact = contact
+        tableView.reloadData()
     }
     
 }

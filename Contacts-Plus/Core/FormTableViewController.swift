@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FormTableViewController: UITableViewController {
+class FormTableViewController: UITableViewController, UITextFieldDelegate {
     // MARK: Properties
     var amountMoved: CGFloat = 0
     var currentTextField: UITextField?

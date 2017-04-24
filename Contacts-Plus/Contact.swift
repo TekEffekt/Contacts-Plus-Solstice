@@ -9,13 +9,13 @@
 import Foundation
 
 struct Contact {
-    let name: String
-    let company: String
-    let favorite: Bool
-    let smallImageUrl: String
-    let largeImageUrl: String
-    let email: String
-    let website: String
-    let phone: Phone
-    let address: Address
+    var name: String
+    var company: String
+    var favorite: Bool
+    var smallImageUrl: String
+    var largeImageUrl: String
+    var email: String
+    var website: String
+    var phone: Phone
+    var address: Address
 }

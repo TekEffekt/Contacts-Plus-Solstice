@@ -12,7 +12,7 @@ import UIKit
 class ContactListDatasource: NSObject, UITableViewDataSource {
     
     var contacts: [Contact]
-    let delegate: DatasourceDelegate
+    weak var delegate: DatasourceDelegate?
     
     init(contacts: [Contact] = [], delegate: DatasourceDelegate) {
         self.contacts = contacts
@@ -27,7 +27,7 @@ class ContactListDatasource: NSObject, UITableViewDataSource {
             if let contacts = contacts {
                 self.contacts = contacts
                 OperationQueue.main.addOperation {
-                    self.delegate.reloadTableView()
+                    self.delegate?.reloadTableView()
                 }
                 print(contacts.count)
             }

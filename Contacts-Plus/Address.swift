@@ -9,11 +9,11 @@
 import Foundation
 
 struct Address {
-    let street: String
-    let city: String
-    let state: String
-    let country: String
-    let zip: String
-    let latitude: Double
-    let longitude: Double
+    var street: String
+    var city: String
+    var state: String
+    var country: String
+    var zip: String
+    var latitude: Double
+    var longitude: Double
 }
