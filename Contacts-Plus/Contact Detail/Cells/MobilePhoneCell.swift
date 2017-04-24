@@ -8,12 +8,15 @@
 
 import UIKit
 
-class MobilePhoneCell: ConfigurableCell {
+class MobilePhoneCell: PhoneCell {
 
     @IBOutlet weak var numberLabel: UILabel!
     
     override func configure(withContact contact: Contact) {
         numberLabel.text = contact.phone.mobile
+        number = contact.phone.mobile
     }
+    
+    
 
 }

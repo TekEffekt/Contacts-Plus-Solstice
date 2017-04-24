@@ -11,9 +11,11 @@ import UIKit
 class WebsiteCell: ConfigurableCell {
 
     @IBOutlet weak var websiteLabel: UILabel!
+    var website: String!
 
     override func configure(withContact contact: Contact) {
         websiteLabel.text = contact.website
+        website = contact.website
     }
     
 }

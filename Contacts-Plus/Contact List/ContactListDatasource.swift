@@ -29,7 +29,6 @@ class ContactListDatasource: NSObject, UITableViewDataSource {
                 OperationQueue.main.addOperation {
                     self.delegate?.reloadTableView()
                 }
-                print(contacts.count)
             }
         }
     }

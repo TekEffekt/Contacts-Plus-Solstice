@@ -60,6 +60,7 @@
 		B6D3C3731EAD47310017E78D /* EditCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3721EAD47310017E78D /* EditCellType.swift */; };
 		B6D3C3771EAD56C80017E78D /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */; };
 		B6D3C3791EAD58380017E78D /* EditContactTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C3781EAD58380017E78D /* EditContactTextField.swift */; };
+		B6D3C37B1EAD94950017E78D /* PhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3C37A1EAD94950017E78D /* PhoneCell.swift */; };
 		CC4A07EA5E0E3B0C8774CEBD /* Pods_Contacts_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20254A9C6996ED208E51F657 /* Pods_Contacts_Plus.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,7 @@
 		B6D3C3721EAD47310017E78D /* EditCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCellType.swift; sourceTree = "<group>"; };
 		B6D3C3761EAD56C80017E78D /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		B6D3C3781EAD58380017E78D /* EditContactTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContactTextField.swift; sourceTree = "<group>"; };
+		B6D3C37A1EAD94950017E78D /* PhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCell.swift; sourceTree = "<group>"; };
 		F714011434A201D52FEA444E /* Pods_Contacts_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -328,6 +330,7 @@
 				B6D3C35D1EAC54150017E78D /* HomePhoneCell.swift */,
 				B6D3C35E1EAC54150017E78D /* MobilePhoneCell.swift */,
 				B6D3C3601EAC54150017E78D /* WorkPhoneCell.swift */,
+				B6D3C37A1EAD94950017E78D /* PhoneCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				B6D3C3271EABE7680017E78D /* Network Alert.swift in Sources */,
 				B6D3C3451EABFB810017E78D /* PhoneParser.swift in Sources */,
 				B6D3C33F1EABF0820017E78D /* ContactRequest.swift in Sources */,
+				B6D3C37B1EAD94950017E78D /* PhoneCell.swift in Sources */,
 				B6D3C3201EABE7680017E78D /* RequestParameters.swift in Sources */,
 				B6D3C3211EABE7680017E78D /* Response.swift in Sources */,
 				B6D3C3731EAD47310017E78D /* EditCellType.swift in Sources */,

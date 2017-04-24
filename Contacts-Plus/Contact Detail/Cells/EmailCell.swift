@@ -11,9 +11,11 @@ import UIKit
 class EmailCell: ConfigurableCell {
 
     @IBOutlet weak var emailLabel: UILabel!
+    var email: String!
 
     override func configure(withContact contact: Contact) {
         emailLabel.text = contact.email
+        email = contact.email
     }
     
 }

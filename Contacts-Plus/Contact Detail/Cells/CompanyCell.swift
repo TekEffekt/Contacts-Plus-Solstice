@@ -11,8 +11,10 @@ import UIKit
 class CompanyCell: ConfigurableCell {
 
     @IBOutlet weak var companyLabel: UILabel!
+    var company: String!
 
     override func configure(withContact contact: Contact) {
         companyLabel.text = contact.company
+        company = contact.company
     }
 }

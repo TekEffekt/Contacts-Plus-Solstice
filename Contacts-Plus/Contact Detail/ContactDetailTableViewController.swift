@@ -39,4 +39,48 @@ class ContactDetailTableViewController: UITableViewController, DatasourceDelegat
         tableView.reloadData()
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (tableView.cellForRow(at: indexPath) as? AddressCell) != nil {
+            openMap()
+        } else if let phoneCell = tableView.cellForRow(at: indexPath) as? PhoneCell {
+            call(withNumber: phoneCell.number)
+        } else if (tableView.cellForRow(at: indexPath) as? WebsiteCell) != nil {
+            openWebsite()
+        } else if (tableView.cellForRow(at: indexPath) as? EmailCell) != nil {
+            openEmail()
+        }
+    }
+    
+    func openMap() {
+        let baseUrl : String = "http://maps.apple.com/?q="
+        let name = "\(contact.address.street) \(contact.address.city)"
+        let encodedName = name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let finalUrl = baseUrl + encodedName!
+        
+        let url = URL(string: finalUrl)!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    func call(withNumber number: String) {
+        let stringArray = number.components(
+            separatedBy: NSCharacterSet.decimalDigits.inverted)
+        let digitsOnly = stringArray.joined(separator: "")
+        if let url = URL(string: "tel://\(digitsOnly)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    func openWebsite() {
+        if let url = URL(string: contact.website) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    func openEmail() {
+        let urlString = "mailto:\(contact.email)"
+        if let url = URL(string: urlString) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
 }

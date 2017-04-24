@@ -8,12 +8,13 @@
 
 import UIKit
 
-class HomePhoneCell: ConfigurableCell {
+class HomePhoneCell: PhoneCell {
 
     @IBOutlet weak var numberLabel: UILabel!
 
     override func configure(withContact contact: Contact) {
         numberLabel.text = contact.phone.home
+        number = contact.phone.home
     }
     
 }
